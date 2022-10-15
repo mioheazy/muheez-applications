@@ -28,6 +28,9 @@ module.exports = {
         compress: true,
         historyApiFallback: true,
     },
+    resolve: {
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+    },
     module: {
         rules: [
             {
