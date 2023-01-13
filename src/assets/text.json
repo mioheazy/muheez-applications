@@ -1,0 +1,59 @@
+{
+  "objective": {
+    "title": "Objective",
+    "type": "text",
+    "data": ["I am a product-based software developer with a penchant for solving complex problems. I’ve always aimed to be a part of a team that develops products that makes people’s lives easier and better.", "I also continue to aim to contribute to the general profession of software development by developing and/or improving software development tools.", "I have been a part of the development of several software products, and I would love to one day lead teams to do the same."]
+  },
+  "skills": {
+    "title": "Skills",
+    "type": "tiles",
+    "data": {
+    "Frontend Development": ["HTML/CSS", "Javascript", "Bootstrap", "React", "jQuery", "SASS", "Bundlers", "TypeScript", "WordPress"],
+    "Backend Development": ["PHP (Laravel)", "Python (Django)", "NodeJS", "MySQL", "Mongo", "ExpressJS"],
+    "Api development and integration": ["Building RESTful APIs", "Integrating REST and GraphQL APIs"],
+    "Web Services": ["AWS", "Azure", "AWS CLI", "Azure CLI", "Terraform", "AWS CodePipeline", "EC2", "RDS", "S3", "DynamoDB", "ELB", "EBS"],
+    "Collaboration / Communication": ["Slack", "Trello", "Jira", "Git", "Github"],
+    "Devops": ["CI/CD (Jenkins)", "AWS codepipeline", "Linux", "Unit testing", "Docker"]
+    }
+  },
+  "experience": {
+    "title": "Experience",
+    "type": "list",
+    "data": [  [
+        "Full Stack Software Developer ",
+        "All Tech Systems & Co. | August 2017 – July 2022",
+        [
+          "Produced high quality code that is robust, efficient, and maintainable for the company’s website and api using tools such as react, nodejs, expressjs, mongodb, php, mysql and building and bundling tools such as npm, yarn, webpack, snowpack, grunt, composer etc. while employing the best software development life cycle practices",
+          "Designed, implemented, tested, and deployed new features as a part of the company’s code maintenance and update culture incorporating a Continuous Integration and Delivery approach using tools such as kudu, aws codepipeline, Jenkins etc.",
+          "Led rigorous code reviews and product testing efforts using unit testing technologies such as Jest, PHPUnit and ensuring the best professional software engineering standards are adhered to",
+          "Using the AWS CodePipeline service and direct deployment process in conjunction with and with the understanding of other AWS services such as EC2, S3, RDS, DynamoDB, EBS etc. and other AWS Application Services, I helped the company create, manage and improve on the code deployment process.",
+          "Led the design and development of the company’s first website with my colleagues, Designed, Developed and Deployed client websites and worked on tickets to resolve client complaints on issues pertaining to our product",
+          "Trained some team members on newly adopted technologies and designs and trained clients in HTML/CSS, Javascript, React, PHP, MySQL",
+          "Was the Front-End lead in the design and development of the company’s first software product (ekotranzact) and other products and served as a liaison between clients and the company to help develop a better user experience",
+          "Developed a text/call service as part of a logistics application for the company using the twilio api",
+          "Incorporated the agile methodology into our development process"
+        ]
+      ],
+      [
+        "All Tech Systems & Co.",
+        "Intern | February 2017 – July 2017",
+        ["I worked here as an intern and developed skills in areas including and not limited to the following: CCNA, CCNA Security, Systems Administration, Frontend Web Development, Backend Web Development, Database Administration, Web Development and Design etc."]
+      ]
+    ]
+  },
+  "education": {
+    "title": "Education",
+    "type": "list",
+    "data": [
+      "University of Lagos – B.Sc. (Hons) Geosciences, 2nd Class Upper – 2009 – 2014",
+      "University of Lagos Center for Information Technology and Systems (CITS) – Cisco Networking Academy – 2016"
+    ]
+  },
+  "certifications": {
+    "title": "Certifications",
+    "type": "list",
+    "data": [
+      "OpenJS Node.JS Application Developer (JSNAD) – (in View)"
+    ]
+  }
+}

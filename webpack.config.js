@@ -1,5 +1,7 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
+// const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 let mode = "development"
 if (process.env.NODE_ENV === "production") {
@@ -30,12 +32,16 @@ module.exports = {
     },
     resolve: {
         extensions: ['.js', '.jsx', '.ts', '.tsx'],
+        fallback: {
+            'buffer': require.resolve('buffer')
+        }
     },
     module: {
         rules: [
             {
                 test: /\.s?css$/,
                 use: ["style-loader", "css-loader", "sass-loader"],
+                // use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
             },
             {
                 test: /\.(js|ts|tsx|jsx)$/,
@@ -59,5 +65,7 @@ module.exports = {
             filename: "index.html",
             template: "src/template.html",
         }),
+        new BundleAnalyzerPlugin(),
+        // new MiniCssExtractPlugin(),
     ]
 }

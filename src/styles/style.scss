@@ -1,0 +1,268 @@
+@font-face {
+  font-family: 'RobotoMonoItalic';
+  font-style: italic;
+  src: url(../assets/fonts/Roboto_Mono/RobotoMono-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: 'RobotoMono';
+  src: url(../assets/fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: 'RobotoMonoBold';
+  src: url(../assets/fonts/Roboto_Mono/RobotoMono-Bold.ttf);
+}
+
+* {
+  font-size: 12px;
+  font-family: RobotoMono;
+}
+
+#homeHeader {
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  .homeHeaderIcons {
+    width: 5.5rem;
+    height: 4rem;
+    text-align: center;
+    margin: 0 .4rem;
+    cursor: pointer;
+    z-index: 100;
+
+    .hHIcon {
+      font-size: calc(((1vh + 1vw)/2)*4);
+    }
+
+    .hHText {
+      font-size: .7rem;
+      margin-top: .1rem;
+      text-align: center;
+    }
+  }
+
+  .homeHeaderIcons.active {
+    background-image: linear-gradient(-225deg,
+        #231557 0%,
+        #44107a 29%,
+        #ff1361 67%,
+        #fff800 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+  }
+
+  @keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+}
+
+#main-nav ul {
+  background-color: midnightblue;
+  margin: 0;
+  padding: 10px;
+
+    li {
+      list-style-type: none;
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+}
+
+.skillTile {
+  padding: 5px;
+  background-color: aquamarine;
+  margin: 1px 5px 1px 0;
+  display: inline-block;
+}
+
+.listItem {
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 700px) {
+  * {
+    font-size: 14px;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  .container {
+    width: 80%;
+    margin: 0 10%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  * {
+    font-size: 16px;
+  }
+
+  #homeHeader {
+    .homeHeaderIcons {
+      .hHIcon {
+        font-size: 40px;
+      }
+    }
+  }
+}
+
+//glitch effect
+.glitch {
+  color: rgb(223, 191, 191);
+  position: relative;
+  font-size: 3rem;
+  // margin: 70px 200px;
+  animation: glitch 5s 5s infinite;
+}
+
+.glitch::before {
+  content: attr(data-text);
+  position: absolute;
+  left: -2px;
+  text-shadow: -5px 0 magenta;
+  background: black;
+  overflow: hidden;
+  top: 0;
+  animation: noise-1 3s linear infinite alternate-reverse, glitch 5s 5.05s infinite;
+}
+
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 2px;
+  text-shadow: -5px 0 lightgreen;
+  background: black;
+  overflow: hidden;
+  top: 0;
+  animation: noise-2 3s linear infinite alternate-reverse, glitch 5s 5s infinite;
+}
+
+@keyframes glitch {
+  1% {
+    transform: rotateX(10deg) skewX(90deg);
+  }
+
+  2% {
+    transform: rotateX(0deg) skewX(0deg);
+  }
+}
+
+@keyframes noise-1 {
+  $steps: 30;
+
+  @for $i from 1 through $steps {
+    #{percentage($i*calc(1/$steps))} {
+      $top: random(100);
+      $bottom: random(101 - $top);
+      clip-path: inset(#{$top}px 0 #{$bottom}px 0);
+    }
+  }
+}
+
+@keyframes noise-2 {
+  $steps: 30;
+
+  @for $i from 0 through $steps {
+    #{percentage($i*calc(1/$steps))} {
+      $top: random(100);
+      $bottom: random(101 - $top);
+      clip-path: inset(#{$top}px 0 #{$bottom}px 0);
+    }
+  }
+}
+
+.scanlines {
+  overflow: hidden;
+  mix-blend-mode: difference;
+}
+
+.scanlines::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+
+  background: repeating-linear-gradient(to bottom,
+      transparent 0%,
+      rgba(255, 255, 255, 0.05) .5%,
+      transparent 1%);
+
+  animation: fudge 7s ease-in-out alternate infinite;
+}
+
+
+@keyframes fudge {
+  from {
+    transform: translate(0px, 0px);
+  }
+
+  to {
+    transform: translate(0px, 2%);
+  }
+}
+
+.glow {
+  @extend .glitch;
+  text-shadow: 0 0 1000px rgb(223, 191, 191);
+  color: transparent;
+  position: absolute;
+  top: 0;
+}
+
+@keyframes glitch-2 {
+  1% {
+    transform: rotateX(10deg) skewX(70deg);
+  }
+
+  2% {
+    transform: rotateX(0deg) skewX(0deg);
+  }
+}
+
+//transition group styles
+
+.textDisplay-enter, .textDisplay-appear {
+  opacity: 0;
+  transform: translate(0, 25px);
+  z-index: 1;
+}
+
+.textDisplay-enter.textDisplay-enter-active, 
+.textDisplay-appear.textDisplay-appear-active,
+.textDisplay-appear.textDisplay-appear-done {
+  opacity: 1;
+  transform: translate(0, 0);
+
+  transition: opacity 250ms ease-out, transform 300ms ease;
+}
+
+.textDisplay-exit {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.textDisplay-exit.textDisplay-exit-active {
+  opacity: 0;
+  transform: translate(0, 30px);
+
+  transition: opacity 250ms ease-out, transform 300ms ease;
+}
