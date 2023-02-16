@@ -1,15 +1,23 @@
-import React, { useState, Suspense } from 'react'
+import React, { useState, useEffect, Suspense } from 'react'
+import { useSelector } from  'react-redux'
 import TextBox from './includeComponents/TextBox'
 import { HeaderPlaceHolder } from './includeComponents/HomeHeader'
 import text from '../assets/text.json'
 
 const HomeHeader = React.lazy(async () => await import('./includeComponents/HomeHeader'))
 
+interface state {
+  homeHeader: {
+    section: string
+  }
+}
+
 export default function Home (): JSX.Element {
-  const [homeSection, updateHomeSection] = useState<string>('Objective')
+  const homeHeader = useSelector((state: state) => state.homeHeader)
+  const section = homeHeader.section
   const [textBoxText, updatetextBoxText] = useState<any>(text.objective)
 
-  function getSectionText (section: string): string {
+  function getSectionText (section: string): void {
     let tbText
     switch (section) {
       case 'Certifications':
@@ -29,24 +37,16 @@ export default function Home (): JSX.Element {
         break
     }
     updatetextBoxText(tbText)
-    return section
   }
-
-  function changeSection (event: React.MouseEvent<HTMLDivElement>): void {
-    const section = (event.currentTarget as HTMLElement).dataset.section ?? ''
-    updateHomeSection(getSectionText(section))
-  }
-
-  const headerProps = {
-    changeSection
-  }
+  
+  useEffect(() => {
+    getSectionText(section)
+  }, [section])
 
   return (
     <div>
       <Suspense fallback={<HeaderPlaceHolder />}>
-        <HomeHeader
-          {...headerProps}
-        />
+        <HomeHeader />
       </Suspense>
       <div className="container">
         <TextBox
