@@ -1,10 +1,10 @@
 import React, { useState, useEffect, Suspense } from 'react'
 import { useSelector } from  'react-redux'
 import TextBox from './includeComponents/TextBox'
-import { HeaderPlaceHolder } from './includeComponents/HomeHeader'
+import { HeaderPlaceHolder } from './includeComponents/homeHeader'
 import text from '../assets/text.json'
 
-const HomeHeader = React.lazy(async () => await import('./includeComponents/HomeHeader'))
+const HomeHeader = React.lazy(async () => await import('./includeComponents/homeHeader'))
 
 interface state {
   homeHeader: {
