@@ -2,18 +2,21 @@
   "objective": {
     "title": "Objective",
     "type": "text",
-    "data": ["I am a product-based software developer with a penchant for solving complex problems. I’ve always aimed to be a part of a team that develops products that makes people’s lives easier and better.", "I also continue to aim to contribute to the general profession of software development by developing and/or improving software development tools.", "I have been a part of the development of several software products, and I would love to one day lead teams to do the same."]
+    "data": [
+      "I am a full stack engineer with 6+ years of experience building web applications and creating solutions to complex front and back end problems. I have developed, scaled, maintained, debugged and integrated software used by a range of single user to thousands of users.",
+      "core knowledge of HTML, CSS, JavaScript, and PHP. My core knowledge has made me an asset in that it makes me adapt to any development stack that can emanate from the use of these core languages. I have knowledge of some of them, Bootstrap, SASS, jQuery, React, Node, Mongo, Express, Laravel, etc. and I can easily learn new ones in a little period to be fully ready to start contributing in them. I also have good knowledge of Java, Python and Django, Proficient in mysql, good knowledge of Cloud services such as Azure and AWS especially for CI/CD purposes. I also have experience with WordPress. I also have experience with building tools such as webpack, bundlers and package managers such as npm, yarn, grunt etc. I am also experienced with working in an Agile environment. I work with Linux, Mac, and Windows OS. I can do a lot of these to a proficient level, and I am always ready to pick up on new skills that are integral to whatever workspace I find myself. I am also proficient with Integration tools such as git, Trello, Jira, slack etc. for good collaborative working practices",
+      "I have been a part of the development of many software products and websites for customers ranging from single persons to large corporations and government bodies. I have experience working on products such as websites, logistics software e-commerce applications, health-based software etc. I have worked on my own and as a part of teams with members ranging from 3 to 10. I have also worked on the maintenance of created products and to debug issues raised by customers through tickets. I have good written and communication skills. I work well with customers and clients as I have always been a client facing developer"
+    ]
   },
   "skills": {
     "title": "Skills",
     "type": "tiles",
     "data": {
-    "Frontend Development": ["HTML/CSS", "Javascript", "Bootstrap", "React", "jQuery", "SASS", "Bundlers", "TypeScript", "WordPress"],
-    "Backend Development": ["PHP (Laravel)", "Python (Django)", "NodeJS", "MySQL", "Mongo", "ExpressJS"],
-    "Api development and integration": ["Building RESTful APIs", "Integrating REST and GraphQL APIs"],
-    "Web Services": ["AWS", "Azure", "AWS CLI", "Azure CLI", "Terraform", "AWS CodePipeline", "EC2", "RDS", "S3", "DynamoDB", "ELB", "EBS"],
-    "Collaboration / Communication": ["Slack", "Trello", "Jira", "Git", "Github"],
-    "Devops": ["CI/CD (Jenkins)", "AWS codepipeline", "Linux", "Unit testing", "Docker"]
+    "Frontend Development": ["HTML/CSS", "Javascript", "Bootstrap", "React", "jQuery", "SASS", "Bundlers", "Webpack", "NextJS", "Angular", "Redux", "TypeScript", "WordPress"],
+    "Backend Development": ["PHP (Laravel)", "Python (Django)", "NodeJS", "MySQL", "MongoDB", "ExpressJS", "APIs (Rest, GraphQL)", "PostgresSQL", "Java", "SpringBoot", "Kafka", "ActiveMQ", "Microservices"],
+    "Cloud / Devops / Web Services": ["AWS", "Azure", "AWS CLI", "Azure CLI", "Terraform", "AWS CodePipeline", "EC2", "RDS", "S3", "DynamoDB", "ELB", "EBS", "Docker", "Kubernetes"],
+    "Version Control / Collaboration": ["Slack", "Trello", "Jira", "Git", "Github", "Jenkins"],
+    "Code Test": ["Unit Tests (Jest, PHPUnit, JUnit)", "QA", "TDD"]
     }
   },
   "experience": {
@@ -21,23 +24,31 @@
     "type": "list",
     "data": [  [
         "Full Stack Software Developer ",
-        "All Tech Systems & Co. | August 2017 – July 2022",
+        "CONCORD INNOVATIONS | Sept 2019 – Present",
         [
-          "Produced high quality code that is robust, efficient, and maintainable for the company’s website and api using tools such as react, nodejs, expressjs, mongodb, php, mysql and building and bundling tools such as npm, yarn, webpack, snowpack, grunt, composer etc. while employing the best software development life cycle practices",
+          "Produced high quality code that is robust, efficient, and maintainable for the company’s web apps and api using tools such as react, nodejs, expressjs, mongodb, php, mysql and building and bundling tools such as npm, yarn, webpack, snowpack, grunt, composer etc. while employing the best software development life cycle practices",
           "Designed, implemented, tested, and deployed new features as a part of the company’s code maintenance and update culture incorporating a Continuous Integration and Delivery approach using tools such as kudu, aws codepipeline, Jenkins etc.",
-          "Led rigorous code reviews and product testing efforts using unit testing technologies such as Jest, PHPUnit and ensuring the best professional software engineering standards are adhered to",
-          "Using the AWS CodePipeline service and direct deployment process in conjunction with and with the understanding of other AWS services such as EC2, S3, RDS, DynamoDB, EBS etc. and other AWS Application Services, I helped the company create, manage and improve on the code deployment process.",
-          "Led the design and development of the company’s first website with my colleagues, Designed, Developed and Deployed client websites and worked on tickets to resolve client complaints on issues pertaining to our product",
-          "Trained some team members on newly adopted technologies and designs and trained clients in HTML/CSS, Javascript, React, PHP, MySQL",
-          "Was the Front-End lead in the design and development of the company’s first software product (ekotranzact) and other products and served as a liaison between clients and the company to help develop a better user experience",
-          "Developed a text/call service as part of a logistics application for the company using the twilio api",
-          "Incorporated the agile methodology into our development process"
+          "Led rigorous code reviews and product testing efforts using unit testing technologies such as Jest, PHPUnit, JUnit and ensuring the best professional software engineering standards are adhered to.",
+          "Created and Implemented various database migrations using Phinx, Wrote PHP scripts to update, scale or rollback live databases as a result of code updates.",
+          "Wrote pdf files and excel report autogeneration logic using tools such as HTML,  PHP Office/Spreadsheet, Fpdi, setAssign etc",
+          "Created Dashboard application interfaces for site data visualization with graphs, charts, tables and filter logic and also created report logic and layout for the collection and aggregation of important application data using React, PHP, PHP Office/Spreadsheet, MySQL etc. while writing complex database queries to achieve the collection of needed data from various parts of the application.",
+          "Built,  Scaled, Maintained, and Documented Application pay features using payment APIs such as Hyperwallet and also developed and maintained a text/call service as part of a logistics application for the company using the twilio api.",
+          "Using the AWS CodePipeline service and direct deployment process in conjunction with the understanding of other AWS services such as EC2, S3, RDS, DynamoDB, EBS etc. and other AWS Application Services, I helped the company create, manage and improve on the code deployment process.",
+          "Worked in an agile environment taking part in and organizing daily scrum stand ups, regular retrospectives, making use of the kanban methodology on the jira platform and using tools such as confluence, wiki, GitHub, salesforce etc. to help model the most efficient agile framework",
+          "Helped in the creation of various software development lifecycle plans and methodologies for an improved overall development process.",
+          "Created company documentation for application system design, architecture and database.",
+          "Worked on contracted projects and built solutions for companies in fields such as logistics, medical, pharmaceutical, law, education, marketing, e-commerce etc.",
+          "I was the lead developer in various projects such as text integration using twilio, application migration to cloud, payment api development and integrations, calendar api and frontend development etc."
         ]
       ],
       [
         "All Tech Systems & Co.",
-        "Intern | February 2017 – July 2017",
-        ["I worked here as an intern and developed skills in areas including and not limited to the following: CCNA, CCNA Security, Systems Administration, Frontend Web Development, Backend Web Development, Database Administration, Web Development and Design etc."]
+        "Web developer | February 2017 – August 2019",
+        [
+          "Was the Front-End lead in the design and development of the company’s first software product (ekotranzact) and other products and served as a liaison between clients and the company to help develop a better user experience.",
+          "Trained some team members on newly adopted technologies and designs and trained clients in HTML/CSS, Javascript, React, PHP, MySQL.",
+          "Built web pages with scalable, maintainable, neat and readable react components while employing best SEO strategies and practices necessary for web pages to be easily crawled by search bots and for web pages to always be among the provided search results."
+        ]
       ]
     ]
   },
@@ -53,7 +64,8 @@
     "title": "Certifications",
     "type": "list",
     "data": [
-      "OpenJS Node.JS Application Developer (JSNAD) – (in View)"
+      "OpenJS Node.JS Application Developer (JSNAD) 2023 - 2026",
+      "OpenJS Node.JS Service Developer (JSNSD) - (in view)"
     ]
   }
 }
